@@ -1,0 +1,25 @@
+version: "3"
+services:
+  tomcat:
+    build:
+      context: .
+      dockerfile: tomcat.Dockerfile
+    container_name: tomcat
+
+  app:
+    build:
+      context: .
+      dockerfile: application.Dockerfile
+    ports:
+      - 8080:8080
+    container_name: app
+    
+  nginx:
+    build:
+      context: .
+      dockerfile: web.Dockerfile
+    external_links:
+      - app:app
+    ports:
+      - 80:80
+    container_name: nginx

@@ -1,0 +1,6 @@
+FROM maven:3.3-jdk-8
+COPY . /sparkjava-war-example/
+RUN ls -la /sparkjava-war-example/
+WORKDIR /sparkjava-war-example
+RUN mvn clean package
+COPY /opt/tomcat/webapps
