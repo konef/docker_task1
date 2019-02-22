@@ -1,5 +1,6 @@
-Part 1 
-Run only Dockerfiles:
+Part 1 	
+
+	Run only Dockerfiles:
 bash run.sh
 
 Checking:
