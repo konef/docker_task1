@@ -1,6 +1,5 @@
 Part 1
 Run only Dockerfiles:
-
 bash run.sh
 
 Checking:
@@ -20,4 +19,5 @@ Checking:
 curl localhost:8080 | grep title
 curl localhost:80 | grep title
 curl localhost:8080/sample/
+
 
