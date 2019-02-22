@@ -5,7 +5,9 @@ bash run.sh
 
 Checking:
 curl localhost:8080 | grep title
+
 curl localhost:80 | grep title
+
 curl localhost:8080/sample/
 
 
